@@ -112,7 +112,9 @@
     <script>
         const scrollContainer = document.getElementById('scroll-container');
         const scrollSpeed = 1;
-
+        if (window.innerWidth > 768) {
+            // Ваш код, который должен выполниться при ширине экрана более 768px
+        
         scrollContainer.addEventListener('wheel', smoothScroll);
 
         function smoothScroll(event) {
@@ -124,6 +126,7 @@
                 top: deltaY * scrollSpeed/100,
                 behavior: 'smooth'
             });
+        }
         }
     </script>
     <script>

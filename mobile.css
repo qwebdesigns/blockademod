@@ -55,7 +55,7 @@ section {
     display: grid;
     place-items: center;
     color: var(--text);
-    font-size: 9vh;
+    font-size: 7vh;
 }
 
 .OneButton {
@@ -310,7 +310,7 @@ section {
     display: grid;
     place-items: center;
     color: var(--text);
-    font-size: 6vh;
+    font-size: 5vh;
     margin: 10vh 0vh 0vh 0vh;
 }
 
