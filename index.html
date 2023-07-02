@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./desktop.css">
+    <link rel="stylesheet" href="./mobile.css">
+
+    <title>Блокада Мод™</title>
+</head>
+<body>
+    <article id="scroll-container">
+        <section id="One">
+            <div class="OneText">
+                Блокада Мод
+            </div>
+            <div class="OneButton">
+                <div class="OB_1">
+                    Скачать
+                </div>
+                <div class="OB_2">
+                    Версии
+                </div>
+            </div>
+        </section>
+        <section id="Two">
+            <!-- Содержимое второй секции -->
+            <div class="coloum1">
+                <div class="BoldText1">
+                    Полный набор блоков
+                </div>
+                <div class="MedievalText1">
+                    Новая эстетика майнкрафта: Полный набор блоков с оригинальными текстурами - погрузись в новое визуальное восприятие!
+                </div>
+            </div>
+            <div class="coloum2" id="bb1">
+                <img src="./Assets/ATLAS_SIMPLE.png">
+            </div>
+        </section>
+        <section id="Three">
+
+            <!-- Содержимое третьей секции -->
+            <div class="coloum2" id="bb2">
+                <div>
+                </div>
+            </div>
+            <div class="coloum1">
+                <div class="BoldText1">
+                    Новые дополнения
+                </div>
+                <div class="MedievalText1">
+                    Открой новые грани креативности: Расширенные возможности – Блок сетки, невидемые источники света и жидкая вода!
+                </div>
+            </div>
+        </section>
+        <section id="Four">
+            <div class="versions">
+                <div>Актуальная версия</div>
+            </div>
+            <div class="download2">
+                <div>Cкачать</div>
+            </div>
+            <div class="checks">
+                <div>
+                    <label class="container">
+                        <input type="checkbox" checked="checked" disabled>
+                        <div class="checkmark"></div>
+                    </label>
+                    Оптимизация
+                </div>
+                <div>
+                    <label class="container">
+                        <input type="checkbox" checked="checked" disabled>
+                        <div class="checkmark"></div>
+                    </label>
+                    Вооружение
+                </div>
+                <div>
+                    <label class="container">
+                        <input type="checkbox" checked="checked" disabled>
+                        <div class="checkmark"></div>
+                    </label>
+                    Обновления
+                </div>
+                <div>
+                    <label class="container">
+                        <input type="checkbox" checked="checked" disabled>
+                        <div class="checkmark"></div>
+                    </label>
+                    Дополнения
+                </div>
+            </div>
+        </section>
+    </article>
+
+
+<div id="scroll-progress-bar">
+    <div id="scroll-progress-fill"></div>
+</div>
+
+    <script type="text/javascript" src="https://vk.com/js/api/openapi.js?169"></script>
+    
+    <!-- VK Widget -->
+    <div id="vk_community_messages"></div>
+    <script type="text/javascript">
+        VK.Widgets.CommunityMessages("vk_community_messages", 216549834, { expanded: "1", tooltipButtonText: "Есть вопрос? Задайте!" });
+    </script>
+
+    <script>
+        const scrollContainer = document.getElementById('scroll-container');
+        const scrollSpeed = 1;
+
+        scrollContainer.addEventListener('wheel', smoothScroll);
+
+        function smoothScroll(event) {
+            event.preventDefault();
+            const container = event.currentTarget;
+            const deltaY = event.deltaY;
+
+            container.scrollBy({
+                top: deltaY * scrollSpeed/100,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+                var container = document.getElementById('scroll-container');
+                var progressBar = document.getElementById('scroll-progress-fill');
+
+                container.addEventListener('scroll', function () {
+                    var scrollHeight = container.scrollHeight;
+                    var clientHeight = container.clientHeight;
+                    var scrollTop = container.scrollTop;
+                    var progress = (scrollTop / (scrollHeight - clientHeight)) * 100;
+                    progressBar.style.width = progress + '%';
+                });
+            });
+    </script>
+</body>
+</html>

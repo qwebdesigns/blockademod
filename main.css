@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'arni';
+    src: url('./Assets/arnamu.ttf');
+}
+
+@font-face {
+    font-family: 'RobotoMain';
+    src: url('./Assets/Roboto-Light.ttf');
+}
+
+@font-face {
+    font-family: 'RobotoBold';
+    src: url('./Assets/Roboto-Medium.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'arni';
+    --trackBack: #4A412E;
+    --trackThumb: rgb(255, 255, 255);
+    --text: rgb(255, 255, 255);
+    scroll-behavior: smooth;
+    --back: #0D001E;
+    --buttongradient: linear-gradient(45deg, rgb(100, 61, 219) 0%, rgb(217, 21, 239) 100%);
+    --bgin: linear-gradient(45deg, rgb(217, 21, 239) 0%, rgb(100, 61, 219) 100%);
+    
+}
+
+*::-webkit-scrollbar {
+    width: 0vh;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: var(--back);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: max-content;
+    height: 100%;
+}
