@@ -74,11 +74,27 @@ section {
     background-image: var(--buttongradient);
     color: var(--text);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: 3vh;
 }
+.OB_1 span {
+    font-size: 1.5vh !important;
+    font-family: monospace;
+}
 
+#fafawf span {
+    font-size: 1.5vh !important;
+    font-family: monospace;
+}
+
+#fafawf {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .OB_2 {
     width: 27vw;
     height: 8vh;

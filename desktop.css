@@ -72,10 +72,26 @@ section {
     background-image: var(--buttongradient);
     color: var(--text);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: 3vh;
     cursor: pointer;
+}
+.OB_1 span {
+    font-size: 2vh !important;
+    font-family: monospace;
+}
+
+#fafawf span {
+    font-size: 2vh !important;
+    font-family: monospace;
+}
+#fafawf{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .OB_2 {
     cursor: pointer;
